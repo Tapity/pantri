@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		420BA0AF1E730E7A00BB3940 /* MeatCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420BA0AE1E730E7A00BB3940 /* MeatCell.swift */; };
+		420BA0D71E73907800BB3940 /* CloudKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420BA0D61E73907800BB3940 /* CloudKitExtensions.swift */; };
+		420BA0DB1E73A08C00BB3940 /* SyncBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420BA0DA1E73A08C00BB3940 /* SyncBrain.swift */; };
+		420BA0DF1E75A59800BB3940 /* UserDefaults+Conversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420BA0DE1E75A59800BB3940 /* UserDefaults+Conversion.swift */; };
+		4217FF381EDCC9F80080622F /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4217FF371EDCC9F80080622F /* CloudKit.framework */; };
+		42233A4B1E6E2C1A0031C4C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42233A4A1E6E2C1A0031C4C1 /* AppDelegate.swift */; };
+		42233A4D1E6E2C1A0031C4C1 /* InventoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42233A4C1E6E2C1A0031C4C1 /* InventoryVC.swift */; };
+		42233A4F1E6E2C1A0031C4C1 /* GroceryListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42233A4E1E6E2C1A0031C4C1 /* GroceryListVC.swift */; };
+		42233A521E6E2C1A0031C4C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42233A501E6E2C1A0031C4C1 /* Main.storyboard */; };
+		42233A541E6E2C1A0031C4C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42233A531E6E2C1A0031C4C1 /* Assets.xcassets */; };
+		42233A571E6E2C1A0031C4C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42233A551E6E2C1A0031C4C1 /* LaunchScreen.storyboard */; };
+		42233A601E6E2CA90031C4C1 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 42233A5E1E6E2CA90031C4C1 /* Model.xcdatamodeld */; };
+		42233A621E6E2DA90031C4C1 /* AddItemVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42233A611E6E2DA90031C4C1 /* AddItemVC.swift */; };
+		42233A651E6E31C70031C4C1 /* CategoryPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42233A641E6E31C70031C4C1 /* CategoryPicker.swift */; };
+		42233A671E6E427A0031C4C1 /* InventoryItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42233A661E6E427A0031C4C1 /* InventoryItemCell.swift */; };
+		42233A6C1E6E47E40031C4C1 /* InventoryVC+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42233A6B1E6E47E40031C4C1 /* InventoryVC+TableView.swift */; };
+		422ACC371E6F8A8200C0893D /* InventoryVC+Fetches.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422ACC361E6F8A8200C0893D /* InventoryVC+Fetches.swift */; };
+		424E49ED1EA5C683005E1664 /* Altoysitalicpersonalonly.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 424E49EC1EA5C683005E1664 /* Altoysitalicpersonalonly.ttf */; };
+		42B4A4F31E72226100CF898F /* FruitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B4A4F21E72226000CF898F /* FruitCell.swift */; };
+		42C99F1B1E70BB9C0026FBA6 /* Category+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C99F191E70BB9C0026FBA6 /* Category+CoreDataClass.swift */; };
+		42C99F1C1E70BB9C0026FBA6 /* Category+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C99F1A1E70BB9C0026FBA6 /* Category+CoreDataProperties.swift */; };
+		42EA8A0B1EA45AC10040916C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EA8A0A1EA45AC10040916C /* TabBarController.swift */; };
+		42F5CE421E6F913800E94C96 /* GroceryListVC+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F5CE411E6F913800E94C96 /* GroceryListVC+DataSource.swift */; };
+		42F5CE441E6F917F00E94C96 /* GroceryList+Fetches.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F5CE431E6F917F00E94C96 /* GroceryList+Fetches.swift */; };
+		42F5CE461E6F95C800E94C96 /* GroceryListItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42F5CE451E6F95C800E94C96 /* GroceryListItemCell.swift */; };
+		66BCF57390E98F735EB0C729 /* Pods_Pantri1_1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DA041B45A332782900D9F89 /* Pods_Pantri1_1.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		420BA0AE1E730E7A00BB3940 /* MeatCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeatCell.swift; sourceTree = "<group>"; };
+		420BA0B01E7369D900BB3940 /* Pantri.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pantri.entitlements; sourceTree = "<group>"; };
+		420BA0D61E73907800BB3940 /* CloudKitExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CloudKitExtensions.swift; path = ../CloudKitExtensions.swift; sourceTree = "<group>"; };
+		420BA0DA1E73A08C00BB3940 /* SyncBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyncBrain.swift; sourceTree = "<group>"; };
+		420BA0DE1E75A59800BB3940 /* UserDefaults+Conversion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Conversion.swift"; sourceTree = "<group>"; };
+		4217FF371EDCC9F80080622F /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		42233A471E6E2C1A0031C4C1 /* Pantri1-1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pantri1-1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		42233A4A1E6E2C1A0031C4C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		42233A4C1E6E2C1A0031C4C1 /* InventoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryVC.swift; sourceTree = "<group>"; };
+		42233A4E1E6E2C1A0031C4C1 /* GroceryListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryListVC.swift; sourceTree = "<group>"; };
+		42233A511E6E2C1A0031C4C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		42233A531E6E2C1A0031C4C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		42233A561E6E2C1A0031C4C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		42233A581E6E2C1A0031C4C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42233A5F1E6E2CA90031C4C1 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		42233A611E6E2DA90031C4C1 /* AddItemVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddItemVC.swift; sourceTree = "<group>"; };
+		42233A641E6E31C70031C4C1 /* CategoryPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryPicker.swift; sourceTree = "<group>"; };
+		42233A661E6E427A0031C4C1 /* InventoryItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InventoryItemCell.swift; sourceTree = "<group>"; };
+		42233A6B1E6E47E40031C4C1 /* InventoryVC+TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "InventoryVC+TableView.swift"; sourceTree = "<group>"; };
+		422ACC361E6F8A8200C0893D /* InventoryVC+Fetches.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "InventoryVC+Fetches.swift"; sourceTree = "<group>"; };
+		424E49EC1EA5C683005E1664 /* Altoysitalicpersonalonly.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Altoysitalicpersonalonly.ttf; path = ../../MiraclePill/Altoysitalicpersonalonly.ttf; sourceTree = "<group>"; };
+		42B4A4F21E72226000CF898F /* FruitCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FruitCell.swift; sourceTree = "<group>"; };
+		42C99F191E70BB9C0026FBA6 /* Category+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Category+CoreDataClass.swift"; sourceTree = "<group>"; };
+		42C99F1A1E70BB9C0026FBA6 /* Category+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Category+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		42EA8A0A1EA45AC10040916C /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		42F5CE411E6F913800E94C96 /* GroceryListVC+DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GroceryListVC+DataSource.swift"; sourceTree = "<group>"; };
+		42F5CE431E6F917F00E94C96 /* GroceryList+Fetches.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GroceryList+Fetches.swift"; sourceTree = "<group>"; };
+		42F5CE451E6F95C800E94C96 /* GroceryListItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroceryListItemCell.swift; sourceTree = "<group>"; };
+		4DA041B45A332782900D9F89 /* Pods_Pantri1_1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pantri1_1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		528A34610162BA14EFD4E631 /* Pods-Pantri1-1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pantri1-1.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pantri1-1/Pods-Pantri1-1.release.xcconfig"; sourceTree = "<group>"; };
+		8E7C084F94DA82BEE00651FD /* Pods-Pantri1-1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pantri1-1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pantri1-1/Pods-Pantri1-1.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		42233A441E6E2C1A0031C4C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4217FF381EDCC9F80080622F /* CloudKit.framework in Frameworks */,
+				66BCF57390E98F735EB0C729 /* Pods_Pantri1_1.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		420BA0B11E7369DC00BB3940 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4217FF371EDCC9F80080622F /* CloudKit.framework */,
+				4DA041B45A332782900D9F89 /* Pods_Pantri1_1.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		42233A3E1E6E2C1A0031C4C1 = {
+			isa = PBXGroup;
+			children = (
+				42233A491E6E2C1A0031C4C1 /* Pantri */,
+				42233A631E6E2F880031C4C1 /* Supporting */,
+				42233A481E6E2C1A0031C4C1 /* Products */,
+				420BA0B11E7369DC00BB3940 /* Frameworks */,
+				4E77E9F099C42F6C0C847EE8 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		42233A481E6E2C1A0031C4C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				42233A471E6E2C1A0031C4C1 /* Pantri1-1.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		42233A491E6E2C1A0031C4C1 /* Pantri */ = {
+			isa = PBXGroup;
+			children = (
+				42F5CE3A1E6F8BC800E94C96 /* Inventory */,
+				42F5CE471E6F96C700E94C96 /* GroceryList */,
+				420BA0DA1E73A08C00BB3940 /* SyncBrain.swift */,
+				42233A611E6E2DA90031C4C1 /* AddItemVC.swift */,
+				42233A501E6E2C1A0031C4C1 /* Main.storyboard */,
+				42233A5E1E6E2CA90031C4C1 /* Model.xcdatamodeld */,
+			);
+			path = Pantri;
+			sourceTree = "<group>";
+		};
+		42233A631E6E2F880031C4C1 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				420BA0DE1E75A59800BB3940 /* UserDefaults+Conversion.swift */,
+				420BA0D61E73907800BB3940 /* CloudKitExtensions.swift */,
+				42C99F191E70BB9C0026FBA6 /* Category+CoreDataClass.swift */,
+				42C99F1A1E70BB9C0026FBA6 /* Category+CoreDataProperties.swift */,
+				42233A4A1E6E2C1A0031C4C1 /* AppDelegate.swift */,
+				42233A581E6E2C1A0031C4C1 /* Info.plist */,
+				424E49EC1EA5C683005E1664 /* Altoysitalicpersonalonly.ttf */,
+				420BA0B01E7369D900BB3940 /* Pantri.entitlements */,
+				42233A681E6E42ED0031C4C1 /* UIElements */,
+				42233A551E6E2C1A0031C4C1 /* LaunchScreen.storyboard */,
+				42233A531E6E2C1A0031C4C1 /* Assets.xcassets */,
+			);
+			name = Supporting;
+			path = Pantri;
+			sourceTree = "<group>";
+		};
+		42233A681E6E42ED0031C4C1 /* UIElements */ = {
+			isa = PBXGroup;
+			children = (
+				42EA8A0A1EA45AC10040916C /* TabBarController.swift */,
+				42233A641E6E31C70031C4C1 /* CategoryPicker.swift */,
+			);
+			name = UIElements;
+			sourceTree = "<group>";
+		};
+		42F5CE3A1E6F8BC800E94C96 /* Inventory */ = {
+			isa = PBXGroup;
+			children = (
+				42233A4C1E6E2C1A0031C4C1 /* InventoryVC.swift */,
+				42233A6B1E6E47E40031C4C1 /* InventoryVC+TableView.swift */,
+				422ACC361E6F8A8200C0893D /* InventoryVC+Fetches.swift */,
+				42233A661E6E427A0031C4C1 /* InventoryItemCell.swift */,
+			);
+			name = Inventory;
+			sourceTree = "<group>";
+		};
+		42F5CE471E6F96C700E94C96 /* GroceryList */ = {
+			isa = PBXGroup;
+			children = (
+				42233A4E1E6E2C1A0031C4C1 /* GroceryListVC.swift */,
+				42F5CE431E6F917F00E94C96 /* GroceryList+Fetches.swift */,
+				42F5CE411E6F913800E94C96 /* GroceryListVC+DataSource.swift */,
+				42F5CE451E6F95C800E94C96 /* GroceryListItemCell.swift */,
+				42B4A4F21E72226000CF898F /* FruitCell.swift */,
+				420BA0AE1E730E7A00BB3940 /* MeatCell.swift */,
+			);
+			name = GroceryList;
+			sourceTree = "<group>";
+		};
+		4E77E9F099C42F6C0C847EE8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8E7C084F94DA82BEE00651FD /* Pods-Pantri1-1.debug.xcconfig */,
+				528A34610162BA14EFD4E631 /* Pods-Pantri1-1.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		42233A461E6E2C1A0031C4C1 /* Pantri1-1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42233A5B1E6E2C1A0031C4C1 /* Build configuration list for PBXNativeTarget "Pantri1-1" */;
+			buildPhases = (
+				C98A17909B75154C90DC74A9 /* [CP] Check Pods Manifest.lock */,
+				42233A431E6E2C1A0031C4C1 /* Sources */,
+				42233A441E6E2C1A0031C4C1 /* Frameworks */,
+				42233A451E6E2C1A0031C4C1 /* Resources */,
+				760C24198DC4199137426CA4 /* [CP] Embed Pods Frameworks */,
+				1FEF9DF5CAFBD69572E5F76C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pantri1-1";
+			productName = Pantri;
+			productReference = 42233A471E6E2C1A0031C4C1 /* Pantri1-1.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		42233A3F1E6E2C1A0031C4C1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Mariah Olson";
+				TargetAttributes = {
+					42233A461E6E2C1A0031C4C1 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = PUYKX7QHQM;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 42233A421E6E2C1A0031C4C1 /* Build configuration list for PBXProject "Pantri1-1" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 42233A3E1E6E2C1A0031C4C1;
+			productRefGroup = 42233A481E6E2C1A0031C4C1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				42233A461E6E2C1A0031C4C1 /* Pantri1-1 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		42233A451E6E2C1A0031C4C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42233A571E6E2C1A0031C4C1 /* LaunchScreen.storyboard in Resources */,
+				42233A541E6E2C1A0031C4C1 /* Assets.xcassets in Resources */,
+				424E49ED1EA5C683005E1664 /* Altoysitalicpersonalonly.ttf in Resources */,
+				42233A521E6E2C1A0031C4C1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1FEF9DF5CAFBD69572E5F76C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pantri1-1/Pods-Pantri1-1-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		760C24198DC4199137426CA4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Pantri1-1/Pods-Pantri1-1-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SwipeCellKit/SwipeCellKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwipeCellKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Pantri1-1/Pods-Pantri1-1-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C98A17909B75154C90DC74A9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pantri1-1-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		42233A431E6E2C1A0031C4C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				420BA0AF1E730E7A00BB3940 /* MeatCell.swift in Sources */,
+				42233A621E6E2DA90031C4C1 /* AddItemVC.swift in Sources */,
+				42233A4F1E6E2C1A0031C4C1 /* GroceryListVC.swift in Sources */,
+				420BA0DB1E73A08C00BB3940 /* SyncBrain.swift in Sources */,
+				420BA0D71E73907800BB3940 /* CloudKitExtensions.swift in Sources */,
+				42233A4B1E6E2C1A0031C4C1 /* AppDelegate.swift in Sources */,
+				42F5CE441E6F917F00E94C96 /* GroceryList+Fetches.swift in Sources */,
+				42F5CE421E6F913800E94C96 /* GroceryListVC+DataSource.swift in Sources */,
+				42B4A4F31E72226100CF898F /* FruitCell.swift in Sources */,
+				42233A4D1E6E2C1A0031C4C1 /* InventoryVC.swift in Sources */,
+				42C99F1C1E70BB9C0026FBA6 /* Category+CoreDataProperties.swift in Sources */,
+				42F5CE461E6F95C800E94C96 /* GroceryListItemCell.swift in Sources */,
+				422ACC371E6F8A8200C0893D /* InventoryVC+Fetches.swift in Sources */,
+				42C99F1B1E70BB9C0026FBA6 /* Category+CoreDataClass.swift in Sources */,
+				420BA0DF1E75A59800BB3940 /* UserDefaults+Conversion.swift in Sources */,
+				42233A6C1E6E47E40031C4C1 /* InventoryVC+TableView.swift in Sources */,
+				42233A601E6E2CA90031C4C1 /* Model.xcdatamodeld in Sources */,
+				42EA8A0B1EA45AC10040916C /* TabBarController.swift in Sources */,
+				42233A651E6E31C70031C4C1 /* CategoryPicker.swift in Sources */,
+				42233A671E6E427A0031C4C1 /* InventoryItemCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		42233A501E6E2C1A0031C4C1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42233A511E6E2C1A0031C4C1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		42233A551E6E2C1A0031C4C1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42233A561E6E2C1A0031C4C1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		42233A591E6E2C1A0031C4C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		42233A5A1E6E2C1A0031C4C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		42233A5C1E6E2C1A0031C4C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E7C084F94DA82BEE00651FD /* Pods-Pantri1-1.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Pantri/Pantri.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = PUYKX7QHQM;
+				INFOPLIST_FILE = Pantri/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Test.Pantri1-1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		42233A5D1E6E2C1A0031C4C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 528A34610162BA14EFD4E631 /* Pods-Pantri1-1.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Pantri/Pantri.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = PUYKX7QHQM;
+				INFOPLIST_FILE = Pantri/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Test.Pantri1-1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		42233A421E6E2C1A0031C4C1 /* Build configuration list for PBXProject "Pantri1-1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42233A591E6E2C1A0031C4C1 /* Debug */,
+				42233A5A1E6E2C1A0031C4C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42233A5B1E6E2C1A0031C4C1 /* Build configuration list for PBXNativeTarget "Pantri1-1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42233A5C1E6E2C1A0031C4C1 /* Debug */,
+				42233A5D1E6E2C1A0031C4C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		42233A5E1E6E2CA90031C4C1 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				42233A5F1E6E2CA90031C4C1 /* Model.xcdatamodel */,
+			);
+			currentVersion = 42233A5F1E6E2CA90031C4C1 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 42233A3F1E6E2C1A0031C4C1 /* Project object */;
+}
