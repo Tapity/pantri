@@ -20,4 +20,6 @@ Features still in progress:
 * Make tableview cells expandable for editing.
   * Instead of having an expandable view for generic shopping items, use expandable tableview cell.
   
+![alt text](http://i68.tinypic.com/20749iq.jpg)
+  
   
