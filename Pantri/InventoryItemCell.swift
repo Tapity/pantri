@@ -9,46 +9,18 @@
 import UIKit
 import SwipeCellKit
 
-protocol InventoryItemCellDelegate {
-    func toggleCell(cell: InventoryItemCell, indexPath: NSIndexPath)
-}
-
 /// Note: Must implement swipeTableViewCell delegate
-
+/// Custom swipeable tableview cell
 class InventoryItemCell: SwipeTableViewCell {
     
-    var expandCellDelegate: InventoryItemCellDelegate?
-    var cellIndexPath : NSIndexPath?
-    
+    /// Item name
     @IBOutlet weak var name: UILabel!
-    @IBOutlet weak var detailsViewHeight: NSLayoutConstraint!
+    /// Marker showing if item is on grocery list
     @IBOutlet weak var onListMarker: UIView!
     
-    var cellItem : Item?
-    var cellHeight : CGFloat = 0
-    let expandedHeight: CGFloat = 200
     
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
-    }
-    
-    override public init(style: UITableViewCellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
-        
-        configureCell()
-    }
-    
-    func configureCell(){
-        // #TODO: Implement
-    }
-    
-    func setIndexPath(indexPath: NSIndexPath){
-        cellIndexPath = indexPath
-    }
-    
+    /* Configure cell appearance */
     func configureCell(item: Item) {
-        cellItem = item
         name.text = item.name
         switch item.amountLeft {
         case 0:
@@ -64,29 +36,6 @@ class InventoryItemCell: SwipeTableViewCell {
             onListMarker.isHidden = true
         } else {
             onListMarker.isHidden = false
-        }
-    }
-    
-    @IBAction func editButton(_ sender: Any) {
-        if cellItem != nil {
-            // implement
-            print(name)
-        }
-    }
-    
-    // expand/close details
-    func cellTapped(){
-        // #TODO: figure out how to get row
-        expandCellDelegate?.toggleCell(cell: self, indexPath: cellIndexPath!)
-        if (self.detailsViewHeight.constant == expandedHeight){
-            self.detailsViewHeight.constant = 0
-            cellHeight = 50
-        } else {
-            self.detailsViewHeight.constant = expandedHeight
-            cellHeight = 250
-        }
-        if let myItem = cellItem {
-            self.configureCell(item: myItem)
         }
     }
     

@@ -77,15 +77,15 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="175" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dNB-qZ-gnh">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="61" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dNB-qZ-gnh">
                                 <rect key="frame" x="0.0" y="94" width="375" height="529"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="175" id="Aoc-x0-bz6" customClass="InventoryItemCell" customModule="Pantri1_1" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="175"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="61" id="Aoc-x0-bz6" customClass="InventoryItemCell" customModule="Pantri1_1" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="61"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Aoc-x0-bz6" id="4gN-nt-wzp">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="174.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="60.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V3Z-rG-QzJ">
@@ -95,45 +95,22 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <view contentMode="scaleToFill" horizontalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qgq-Ab-ZWb">
-                                                    <rect key="frame" x="355" y="0.0" width="20" height="174.5"/>
+                                                    <rect key="frame" x="355" y="0.0" width="20" height="60.5"/>
                                                     <color key="backgroundColor" red="0.40304756164550781" green="0.78901606798171997" blue="0.39677155017852783" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="20" id="KVj-IN-Pcf"/>
-                                                    </constraints>
-                                                </view>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bjw-iq-0Bj">
-                                                    <rect key="frame" x="0.0" y="38" width="367" height="128"/>
-                                                    <subviews>
-                                                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="240" verticalHuggingPriority="240" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B1Y-v3-8hE">
-                                                            <rect key="frame" x="160" y="49" width="46" height="30"/>
-                                                            <state key="normal" title="Button"/>
-                                                            <connections>
-                                                                <action selector="editButton:" destination="Aoc-x0-bz6" eventType="touchUpInside" id="jew-5W-fhW"/>
-                                                            </connections>
-                                                        </button>
-                                                    </subviews>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <constraints>
-                                                        <constraint firstItem="B1Y-v3-8hE" firstAttribute="centerY" secondItem="bjw-iq-0Bj" secondAttribute="centerY" id="PyW-m5-EWq"/>
-                                                        <constraint firstAttribute="height" priority="250" constant="200" id="RCE-9B-eja"/>
-                                                        <constraint firstItem="B1Y-v3-8hE" firstAttribute="centerX" secondItem="bjw-iq-0Bj" secondAttribute="centerX" id="hC9-a6-OuP"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="V3Z-rG-QzJ" firstAttribute="top" secondItem="4gN-nt-wzp" secondAttribute="topMargin" constant="3" id="5d8-yC-2vn"/>
                                                 <constraint firstItem="qgq-Ab-ZWb" firstAttribute="top" secondItem="4gN-nt-wzp" secondAttribute="top" id="Iif-1W-3mg"/>
-                                                <constraint firstItem="bjw-iq-0Bj" firstAttribute="leading" secondItem="4gN-nt-wzp" secondAttribute="leading" id="Su4-hi-h9i"/>
                                                 <constraint firstAttribute="bottom" secondItem="qgq-Ab-ZWb" secondAttribute="bottom" id="TDJ-wi-xlt"/>
-                                                <constraint firstItem="bjw-iq-0Bj" firstAttribute="top" secondItem="V3Z-rG-QzJ" secondAttribute="bottom" constant="6.5" id="Ycb-eL-zvT"/>
                                                 <constraint firstAttribute="trailing" secondItem="qgq-Ab-ZWb" secondAttribute="trailing" id="a6y-ER-NOv"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="bjw-iq-0Bj" secondAttribute="trailing" id="aHH-y8-LMb"/>
                                                 <constraint firstItem="V3Z-rG-QzJ" firstAttribute="leading" secondItem="4gN-nt-wzp" secondAttribute="leadingMargin" constant="20" id="h3l-q3-2XN"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="bjw-iq-0Bj" secondAttribute="bottom" id="hyl-NQ-KQd"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="detailsViewHeight" destination="RCE-9B-eja" id="gHW-LT-3LG"/>
                                             <outlet property="name" destination="V3Z-rG-QzJ" id="eHk-Ej-Dgn"/>
                                             <outlet property="onListMarker" destination="qgq-Ab-ZWb" id="lvi-Th-M4N"/>
                                         </connections>
@@ -643,7 +620,7 @@
         <scene sceneID="yl2-sM-qoP">
             <objects>
                 <tabBarController id="49e-Tb-3d3" customClass="TabBarController" customModule="Pantri1_1" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBar key="tabBar" opaque="NO" contentMode="scaleToFill" translucent="NO" selectionIndicatorImage="Selected" id="W28-zg-YXA">
+                    <tabBar key="tabBar" opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" translucent="NO" selectionIndicatorImage="Selected" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" red="0.73283982276916504" green="0.49775075912475586" blue="0.14410367608070374" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -667,6 +644,6 @@
         <image name="Selected" width="195" height="49"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="zCS-zG-3rw"/>
+        <segue reference="cQh-Hi-gjd"/>
     </inferredMetricsTieBreakers>
 </document>
