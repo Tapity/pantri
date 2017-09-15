@@ -9,9 +9,10 @@
 import Foundation
 import CoreData
 
+/// Manages: fetches and resulting changes to controller
 extension InventoryVC : NSFetchedResultsControllerDelegate {
     
-    /// Fetches and displays data
+    /// Fetches and displays most recent data
     func attemptFetch(){
         
         // create a fetch request for an item
@@ -76,8 +77,8 @@ extension InventoryVC : NSFetchedResultsControllerDelegate {
             break
         case.update:
             if let indexPath = newIndexPath {
-                //let cell = tableView.cellForRow(at: indexPath) as! InventoryItemCell
-                //configureCell(cell: cell, indexPath: indexPath as NSIndexPath)
+                let cell = tableView.cellForRow(at: indexPath) as! InventoryItemCell
+                configureCell(cell: cell, indexPath: indexPath as NSIndexPath)
             }
             break
         case.move:

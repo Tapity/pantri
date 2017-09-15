@@ -11,9 +11,12 @@ import CoreData
 import CloudKit
 import MBProgressHUD
 
+/// Manages: sharing controller and non-tableview UI elements
 class InventoryVC: UIViewController, UICloudSharingControllerDelegate {
 
+    /// table of inventory items
     @IBOutlet weak var tableView: UITableView!
+    /// sort control for inventory items
     @IBOutlet weak var sortControl: UISegmentedControl!
     
     var controller: NSFetchedResultsController<Item>!
@@ -31,13 +34,15 @@ class InventoryVC: UIViewController, UICloudSharingControllerDelegate {
         attemptFetch()
     }
     
+    //# Mark: - Inventory UI elements
+    
     // manage changes to sort control
     @IBAction func sortControlTapped(_ sender: UISegmentedControl) {
         attemptFetch()
         tableView.reloadData()
     }
     
-    // sync
+    /// sync button (temporary solution)
     @IBAction func syncButtonPressed(_ sender: Any) {
         showLoadingHUD()
         cloud.syncCoreDataToCloud()
@@ -45,7 +50,18 @@ class InventoryVC: UIViewController, UICloudSharingControllerDelegate {
         hideLoadingHUD()
     }
     
-    // share
+    private func showLoadingHUD() {
+        let hud = MBProgressHUD.showAdded(to: tableView, animated: true)
+        hud.label.text = "Loading..."
+    }
+    
+    private func hideLoadingHUD() {
+        MBProgressHUD.hide(for: tableView, animated: true)
+    }
+    
+    //# MARK: - Sharing controller
+    
+    // share button
     @IBAction func shareButtonPressed(_ sender: Any) {
         let share = CKShare(rootRecord: cloud.inventoryRecord!)
         share[CKShareTitleKey] = "myInventory" as CKRecordValue?
@@ -78,7 +94,7 @@ class InventoryVC: UIViewController, UICloudSharingControllerDelegate {
     func itemTitle(for: UICloudSharingController) -> String? {
         // Set the title here, this method is required!
         // returning nil or failing to implement delegate methods
-        return "Family Inventory"
+        return "My Inventory"
     }
     
     func cloudSharingControllerDidSaveShare(_ csc: UICloudSharingController) {
@@ -87,17 +103,6 @@ class InventoryVC: UIViewController, UICloudSharingControllerDelegate {
     
     func cloudSharingControllerDidStopSharing(_ csc: UICloudSharingController) {
         print("cloudSharingControllerDidStopSharing")
-    }
-    
-    
-    // MBProgress pod stuff
-    private func showLoadingHUD() {
-        let hud = MBProgressHUD.showAdded(to: tableView, animated: true)
-        hud.label.text = "Loading..."
-    }
-    
-    private func hideLoadingHUD() {
-        MBProgressHUD.hide(for: tableView, animated: true)
     }
     
 }
