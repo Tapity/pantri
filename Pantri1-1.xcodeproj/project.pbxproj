@@ -232,7 +232,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 42233A421E6E2C1A0031C4C1 /* Build configuration list for PBXProject "Pantri1-1" */;
+			buildConfigurationList = 42233A421E6E2C1A0031C4C1 /* Build configuration list for PBXProject "Pantri1-1.temp_caseinsensitive_rename" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -502,7 +502,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		42233A421E6E2C1A0031C4C1 /* Build configuration list for PBXProject "Pantri1-1" */ = {
+		42233A421E6E2C1A0031C4C1 /* Build configuration list for PBXProject "Pantri1-1.temp_caseinsensitive_rename" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				42233A591E6E2C1A0031C4C1 /* Debug */,
