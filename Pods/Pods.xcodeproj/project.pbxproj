@@ -1,0 +1,798 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0844842A7BA43262A2E13115ABFDB411 /* SwipeTransitionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C585ADEBE07E69ECB80ADDC84E48D35D /* SwipeTransitionLayout.swift */; };
+		0968524ED4DE8DF7834055C5B6089D72 /* MBProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 92BD6CEB7A87B01408A02B37CFCE18BF /* MBProgressHUD-dummy.m */; };
+		14CA32AACADBC7D008311E6F720D583D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12992E853CAE14F2102525E0D84ADAB5 /* Foundation.framework */; };
+		1D5412BA507E813B48B04E2AD914B926 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6153FD2A0DDD4EBB2C0B30DBBC21D81 /* Extensions.swift */; };
+		2475537652D981C3239F29CC3CFD2A9D /* SwipeTableOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 133BF7E7A5EABD617553A76A75D7AE4D /* SwipeTableOptions.swift */; };
+		257BA3326922488EE345AE3C04DCA84D /* SwipeTableViewCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59D085CF0A22E96AB53948A3DD36FF9 /* SwipeTableViewCellDelegate.swift */; };
+		27F38D69F0DE5B3CC6B344AF9569B1FB /* Pods-Pantri1-1-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 98F1641F865B473425DE61D058AC56AE /* Pods-Pantri1-1-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		28A794912ED1E06B05D96DF5ED0AED19 /* MBProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 71305640AD76BF79D4640E9C3C2A1E7D /* MBProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40018745AEFA5D8527BD3B9400C75F83 /* SwipeActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A42B8158B2452FDB6EDADD447CD70E0 /* SwipeActionButton.swift */; };
+		4310E48839B8D25C0A6FBB689D391B03 /* SwipeAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080FC63DC02DA3AA1477F4C11BF9F09A /* SwipeAnimator.swift */; };
+		447F8CA06BEBE70367BEADEDC145364A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12992E853CAE14F2102525E0D84ADAB5 /* Foundation.framework */; };
+		51BE98AA9E34D60ED4A6DFFEDDEE23BC /* SwipeExpansionStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A200E9629A23CFAA449EA4FD3624A3C /* SwipeExpansionStyle.swift */; };
+		5E0141830198A4657EFD1137415FEAFB /* SwipeActionTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = B212CB591C469A10AC3F4B9067723DD0 /* SwipeActionTransitioning.swift */; };
+		5EFE3C1316AE3DF65B81286439987953 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F7BDB2580B244756CFA046131516EF2 /* QuartzCore.framework */; };
+		897C38C8E3C31950E2E93A4D6937CCC4 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 919ACB6C0431B4301C5A786E2C0A9F9A /* MBProgressHUD.m */; };
+		9685E41C72FF6221F8F6D2F7D658F753 /* SwipeActionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFAD5A0BBF2F86BFC080C3FD4D124CC /* SwipeActionsView.swift */; };
+		97D1CB681ECBCA616EABB8462E38E22D /* SwipeTableViewCell+Accessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A93B6E62C6B3042C3DA73A5EB78A780 /* SwipeTableViewCell+Accessibility.swift */; };
+		A5BF8DBDD8660DBCFE712657F3D82BDA /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = C0532FBD41B1C836837A445E0461E6BE /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF959C2AD1252D9CE870CB9E721FF904 /* SwipeAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6296B5FCF19AFA6411BF95765DCD66AF /* SwipeAction.swift */; };
+		BFC3AAFFCCFE94270FA4A3040449FA18 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 409899CE1143F81E8130E2069D59605B /* CoreGraphics.framework */; };
+		C26ACEDFD838F705B664AE85BCFA75F1 /* Pods-Pantri1-1-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 70F9A917A1BBC42B157290EB3261105B /* Pods-Pantri1-1-dummy.m */; };
+		CBCE636A2583425661E29FC1C0E1727C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12992E853CAE14F2102525E0D84ADAB5 /* Foundation.framework */; };
+		CF98CA6F117B33D8180F54FEA4BA12F2 /* Swipeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2220CD80BB479003EA9E723D222BB3AC /* Swipeable.swift */; };
+		D8A8B29FAB1D72892ED086CE4B9074E6 /* SwipeTableViewCell+Display.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49896CA0DC7BB88826C0C3903C74E7A8 /* SwipeTableViewCell+Display.swift */; };
+		E2D076A92B4245AAC9665379C381F4C7 /* SwipeCellKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D6EA1F821AD3C50EAB5365097559067 /* SwipeCellKit-dummy.m */; };
+		E3B1E9D7DD619875F48379D1B04BDB8D /* SwipeExpanding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E34AA1AC7AEAF6B0963A64AD44D9C0 /* SwipeExpanding.swift */; };
+		E3D4BD22F779BA53F4676E106BDB5F72 /* SwipeCellKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E56676F70ACE3096DD07A7DDE7360264 /* SwipeCellKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBAF867E27E4464D4F8B499308B1D58F /* SwipeFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2421C276F375733442515BF2E1239B67 /* SwipeFeedback.swift */; };
+		EBB55DF52814829824EC756B4BEA8880 /* SwipeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECD6C35DDECB953810BFCB3286835A7 /* SwipeTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3B83467AE7D0801F5A4789445697D16C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26D0EC49914E417DFE0F7FE1B15FA210;
+			remoteInfo = SwipeCellKit;
+		};
+		A26CAFEDE06B48C8AF17DA3535E7963F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41FA54D12162DAD51D02FC58A2CD5034;
+			remoteInfo = MBProgressHUD;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		080FC63DC02DA3AA1477F4C11BF9F09A /* SwipeAnimator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeAnimator.swift; path = Source/SwipeAnimator.swift; sourceTree = "<group>"; };
+		0A42B8158B2452FDB6EDADD447CD70E0 /* SwipeActionButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeActionButton.swift; path = Source/SwipeActionButton.swift; sourceTree = "<group>"; };
+		0A93B6E62C6B3042C3DA73A5EB78A780 /* SwipeTableViewCell+Accessibility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SwipeTableViewCell+Accessibility.swift"; path = "Source/SwipeTableViewCell+Accessibility.swift"; sourceTree = "<group>"; };
+		0D70E10B518455C4AE0A6599B0BBA585 /* MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		12992E853CAE14F2102525E0D84ADAB5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		133BF7E7A5EABD617553A76A75D7AE4D /* SwipeTableOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeTableOptions.swift; path = Source/SwipeTableOptions.swift; sourceTree = "<group>"; };
+		18338D3AA18068B0A3F649E21FCCA111 /* MBProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = MBProgressHUD.modulemap; sourceTree = "<group>"; };
+		2220CD80BB479003EA9E723D222BB3AC /* Swipeable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Swipeable.swift; path = Source/Swipeable.swift; sourceTree = "<group>"; };
+		2421C276F375733442515BF2E1239B67 /* SwipeFeedback.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeFeedback.swift; path = Source/SwipeFeedback.swift; sourceTree = "<group>"; };
+		32E34AA1AC7AEAF6B0963A64AD44D9C0 /* SwipeExpanding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeExpanding.swift; path = Source/SwipeExpanding.swift; sourceTree = "<group>"; };
+		3A200E9629A23CFAA449EA4FD3624A3C /* SwipeExpansionStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeExpansionStyle.swift; path = Source/SwipeExpansionStyle.swift; sourceTree = "<group>"; };
+		3D6EA1F821AD3C50EAB5365097559067 /* SwipeCellKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwipeCellKit-dummy.m"; sourceTree = "<group>"; };
+		409899CE1143F81E8130E2069D59605B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		45EB38EE01E8D70F27B300A9FC67DAED /* Pods-Pantri1-1-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Pantri1-1-acknowledgements.markdown"; sourceTree = "<group>"; };
+		49896CA0DC7BB88826C0C3903C74E7A8 /* SwipeTableViewCell+Display.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SwipeTableViewCell+Display.swift"; path = "Source/SwipeTableViewCell+Display.swift"; sourceTree = "<group>"; };
+		52825C0550EAC37C79331D26570D752C /* SwipeCellKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwipeCellKit.modulemap; sourceTree = "<group>"; };
+		58767AF3F7BC59D23F88F2BF038E7E7C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F7BDB2580B244756CFA046131516EF2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		6296B5FCF19AFA6411BF95765DCD66AF /* SwipeAction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeAction.swift; path = Source/SwipeAction.swift; sourceTree = "<group>"; };
+		65C03D01933DA173391FF1FA2C0E59AC /* Pods-Pantri1-1.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-Pantri1-1.modulemap"; sourceTree = "<group>"; };
+		6B337411C5D501E1FE17530DA5E3A751 /* Pods_Pantri1_1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Pantri1_1.framework; path = "Pods-Pantri1-1.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		70F9A917A1BBC42B157290EB3261105B /* Pods-Pantri1-1-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Pantri1-1-dummy.m"; sourceTree = "<group>"; };
+		71305640AD76BF79D4640E9C3C2A1E7D /* MBProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-umbrella.h"; sourceTree = "<group>"; };
+		74C58AB40170A0CB1A2DD0A48349269A /* Pods-Pantri1-1-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pantri1-1-frameworks.sh"; sourceTree = "<group>"; };
+		919ACB6C0431B4301C5A786E2C0A9F9A /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		92BD6CEB7A87B01408A02B37CFCE18BF /* MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		97800973B412DAE5181C00B8B4D0D510 /* SwipeCellKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwipeCellKit-prefix.pch"; sourceTree = "<group>"; };
+		98F1641F865B473425DE61D058AC56AE /* Pods-Pantri1-1-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Pantri1-1-umbrella.h"; sourceTree = "<group>"; };
+		A2D37F7BE69BFF12F29B41E1D46336C1 /* Pods-Pantri1-1-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Pantri1-1-resources.sh"; sourceTree = "<group>"; };
+		B212CB591C469A10AC3F4B9067723DD0 /* SwipeActionTransitioning.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeActionTransitioning.swift; path = Source/SwipeActionTransitioning.swift; sourceTree = "<group>"; };
+		B6153FD2A0DDD4EBB2C0B30DBBC21D81 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Source/Extensions.swift; sourceTree = "<group>"; };
+		BCAB7CAB52BCAC507248E890D439C7E7 /* Pods-Pantri1-1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pantri1-1.release.xcconfig"; sourceTree = "<group>"; };
+		C0532FBD41B1C836837A445E0461E6BE /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		C296D48166CFF18AFCCC53C1578958C4 /* MBProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.xcconfig; sourceTree = "<group>"; };
+		C585ADEBE07E69ECB80ADDC84E48D35D /* SwipeTransitionLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeTransitionLayout.swift; path = Source/SwipeTransitionLayout.swift; sourceTree = "<group>"; };
+		C59D085CF0A22E96AB53948A3DD36FF9 /* SwipeTableViewCellDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeTableViewCellDelegate.swift; path = Source/SwipeTableViewCellDelegate.swift; sourceTree = "<group>"; };
+		CECD6C35DDECB953810BFCB3286835A7 /* SwipeTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeTableViewCell.swift; path = Source/SwipeTableViewCell.swift; sourceTree = "<group>"; };
+		D206E4AD453D61FC5254EB1F9BC5B4F7 /* Pods-Pantri1-1-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Pantri1-1-acknowledgements.plist"; sourceTree = "<group>"; };
+		D21405E446ABBFE4145CDA1492384AE9 /* SwipeCellKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwipeCellKit.framework; path = SwipeCellKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D35E0A0121269D4B3DDAEF0A931F86B1 /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MBProgressHUD.framework; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D784EFA6F027D7A594A9CF4F6FD36E1B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCF1950619835A99EAC2092A1B661A93 /* Pods-Pantri1-1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Pantri1-1.debug.xcconfig"; sourceTree = "<group>"; };
+		E56676F70ACE3096DD07A7DDE7360264 /* SwipeCellKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwipeCellKit-umbrella.h"; sourceTree = "<group>"; };
+		EBFAD5A0BBF2F86BFC080C3FD4D124CC /* SwipeActionsView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwipeActionsView.swift; path = Source/SwipeActionsView.swift; sourceTree = "<group>"; };
+		EF6E414996E102DF6BF421CAB2F08709 /* SwipeCellKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwipeCellKit.xcconfig; sourceTree = "<group>"; };
+		FAA9F74DA549BD2908EA8136454BA1D1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		13D7B6D510EE5F2C973B671E3EDE2FB2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				447F8CA06BEBE70367BEADEDC145364A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		364C538AE0BC7019F9A243DF3314EA96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBCE636A2583425661E29FC1C0E1727C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B57774E30FD88AE26F9037E1360E947B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFC3AAFFCCFE94270FA4A3040449FA18 /* CoreGraphics.framework in Frameworks */,
+				14CA32AACADBC7D008311E6F720D583D /* Foundation.framework in Frameworks */,
+				5EFE3C1316AE3DF65B81286439987953 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A4DBD434EA75DD3EDD3494C46AE6968 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1F4D6598125EEEAC0B4AA9C6929A8450 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D35E0A0121269D4B3DDAEF0A931F86B1 /* MBProgressHUD.framework */,
+				6B337411C5D501E1FE17530DA5E3A751 /* Pods_Pantri1_1.framework */,
+				D21405E446ABBFE4145CDA1492384AE9 /* SwipeCellKit.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F6848BD9597F2A2A7A824332B0656E5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				FAA9F74DA549BD2908EA8136454BA1D1 /* Info.plist */,
+				18338D3AA18068B0A3F649E21FCCA111 /* MBProgressHUD.modulemap */,
+				C296D48166CFF18AFCCC53C1578958C4 /* MBProgressHUD.xcconfig */,
+				92BD6CEB7A87B01408A02B37CFCE18BF /* MBProgressHUD-dummy.m */,
+				0D70E10B518455C4AE0A6599B0BBA585 /* MBProgressHUD-prefix.pch */,
+				71305640AD76BF79D4640E9C3C2A1E7D /* MBProgressHUD-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MBProgressHUD";
+			sourceTree = "<group>";
+		};
+		5A4DBD434EA75DD3EDD3494C46AE6968 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				409899CE1143F81E8130E2069D59605B /* CoreGraphics.framework */,
+				12992E853CAE14F2102525E0D84ADAB5 /* Foundation.framework */,
+				5F7BDB2580B244756CFA046131516EF2 /* QuartzCore.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				A2271D9EC522CE61B2697B6BE12CD748 /* Pods */,
+				1F4D6598125EEEAC0B4AA9C6929A8450 /* Products */,
+				AA8DD76E40ACC762C9B12490280F3003 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		87639881F7869BAA72FA301800BE6833 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				58767AF3F7BC59D23F88F2BF038E7E7C /* Info.plist */,
+				52825C0550EAC37C79331D26570D752C /* SwipeCellKit.modulemap */,
+				EF6E414996E102DF6BF421CAB2F08709 /* SwipeCellKit.xcconfig */,
+				3D6EA1F821AD3C50EAB5365097559067 /* SwipeCellKit-dummy.m */,
+				97800973B412DAE5181C00B8B4D0D510 /* SwipeCellKit-prefix.pch */,
+				E56676F70ACE3096DD07A7DDE7360264 /* SwipeCellKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwipeCellKit";
+			sourceTree = "<group>";
+		};
+		A2271D9EC522CE61B2697B6BE12CD748 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ACF6B1AFE74C77AE631097B4F0F6F882 /* MBProgressHUD */,
+				ED7EB0889868B8E78D181759B5B33F4E /* SwipeCellKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AA8DD76E40ACC762C9B12490280F3003 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C359A22AB2FB4060704987AA24C2C700 /* Pods-Pantri1-1 */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		ACF6B1AFE74C77AE631097B4F0F6F882 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				C0532FBD41B1C836837A445E0461E6BE /* MBProgressHUD.h */,
+				919ACB6C0431B4301C5A786E2C0A9F9A /* MBProgressHUD.m */,
+				1F6848BD9597F2A2A7A824332B0656E5 /* Support Files */,
+			);
+			name = MBProgressHUD;
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		C359A22AB2FB4060704987AA24C2C700 /* Pods-Pantri1-1 */ = {
+			isa = PBXGroup;
+			children = (
+				D784EFA6F027D7A594A9CF4F6FD36E1B /* Info.plist */,
+				65C03D01933DA173391FF1FA2C0E59AC /* Pods-Pantri1-1.modulemap */,
+				45EB38EE01E8D70F27B300A9FC67DAED /* Pods-Pantri1-1-acknowledgements.markdown */,
+				D206E4AD453D61FC5254EB1F9BC5B4F7 /* Pods-Pantri1-1-acknowledgements.plist */,
+				70F9A917A1BBC42B157290EB3261105B /* Pods-Pantri1-1-dummy.m */,
+				74C58AB40170A0CB1A2DD0A48349269A /* Pods-Pantri1-1-frameworks.sh */,
+				A2D37F7BE69BFF12F29B41E1D46336C1 /* Pods-Pantri1-1-resources.sh */,
+				98F1641F865B473425DE61D058AC56AE /* Pods-Pantri1-1-umbrella.h */,
+				DCF1950619835A99EAC2092A1B661A93 /* Pods-Pantri1-1.debug.xcconfig */,
+				BCAB7CAB52BCAC507248E890D439C7E7 /* Pods-Pantri1-1.release.xcconfig */,
+			);
+			name = "Pods-Pantri1-1";
+			path = "Target Support Files/Pods-Pantri1-1";
+			sourceTree = "<group>";
+		};
+		ED7EB0889868B8E78D181759B5B33F4E /* SwipeCellKit */ = {
+			isa = PBXGroup;
+			children = (
+				B6153FD2A0DDD4EBB2C0B30DBBC21D81 /* Extensions.swift */,
+				2220CD80BB479003EA9E723D222BB3AC /* Swipeable.swift */,
+				6296B5FCF19AFA6411BF95765DCD66AF /* SwipeAction.swift */,
+				0A42B8158B2452FDB6EDADD447CD70E0 /* SwipeActionButton.swift */,
+				EBFAD5A0BBF2F86BFC080C3FD4D124CC /* SwipeActionsView.swift */,
+				B212CB591C469A10AC3F4B9067723DD0 /* SwipeActionTransitioning.swift */,
+				080FC63DC02DA3AA1477F4C11BF9F09A /* SwipeAnimator.swift */,
+				32E34AA1AC7AEAF6B0963A64AD44D9C0 /* SwipeExpanding.swift */,
+				3A200E9629A23CFAA449EA4FD3624A3C /* SwipeExpansionStyle.swift */,
+				2421C276F375733442515BF2E1239B67 /* SwipeFeedback.swift */,
+				133BF7E7A5EABD617553A76A75D7AE4D /* SwipeTableOptions.swift */,
+				CECD6C35DDECB953810BFCB3286835A7 /* SwipeTableViewCell.swift */,
+				0A93B6E62C6B3042C3DA73A5EB78A780 /* SwipeTableViewCell+Accessibility.swift */,
+				49896CA0DC7BB88826C0C3903C74E7A8 /* SwipeTableViewCell+Display.swift */,
+				C59D085CF0A22E96AB53948A3DD36FF9 /* SwipeTableViewCellDelegate.swift */,
+				C585ADEBE07E69ECB80ADDC84E48D35D /* SwipeTransitionLayout.swift */,
+				87639881F7869BAA72FA301800BE6833 /* Support Files */,
+			);
+			name = SwipeCellKit;
+			path = SwipeCellKit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		197B7877D5D346F405BDD059EF96DBDC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28A794912ED1E06B05D96DF5ED0AED19 /* MBProgressHUD-umbrella.h in Headers */,
+				A5BF8DBDD8660DBCFE712657F3D82BDA /* MBProgressHUD.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		23DA9354120B7C45F7AC826277C2A0D1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27F38D69F0DE5B3CC6B344AF9569B1FB /* Pods-Pantri1-1-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B88D4703E4357F5DA7C5DA6BA77ED2E9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3D4BD22F779BA53F4676E106BDB5F72 /* SwipeCellKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		26D0EC49914E417DFE0F7FE1B15FA210 /* SwipeCellKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9207BC138B880707C6F7B4EDC0CBEBD /* Build configuration list for PBXNativeTarget "SwipeCellKit" */;
+			buildPhases = (
+				91EF922DC2F3CAD880FF850A9B365260 /* Sources */,
+				13D7B6D510EE5F2C973B671E3EDE2FB2 /* Frameworks */,
+				B88D4703E4357F5DA7C5DA6BA77ED2E9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwipeCellKit;
+			productName = SwipeCellKit;
+			productReference = D21405E446ABBFE4145CDA1492384AE9 /* SwipeCellKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		41FA54D12162DAD51D02FC58A2CD5034 /* MBProgressHUD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC1874913BA1F82C4953C3C7F551AB22 /* Build configuration list for PBXNativeTarget "MBProgressHUD" */;
+			buildPhases = (
+				FE8E0446C3B3B52779E8DE373E495A61 /* Sources */,
+				B57774E30FD88AE26F9037E1360E947B /* Frameworks */,
+				197B7877D5D346F405BDD059EF96DBDC /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MBProgressHUD;
+			productName = MBProgressHUD;
+			productReference = D35E0A0121269D4B3DDAEF0A931F86B1 /* MBProgressHUD.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		ACC29EFDD2C10805A227054F36EE19D3 /* Pods-Pantri1-1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D2D8A74F9A164CBC42CCE5395DD4E4B /* Build configuration list for PBXNativeTarget "Pods-Pantri1-1" */;
+			buildPhases = (
+				27E6EB8B4DC1CB604F6D31CD853FFA3F /* Sources */,
+				364C538AE0BC7019F9A243DF3314EA96 /* Frameworks */,
+				23DA9354120B7C45F7AC826277C2A0D1 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				935E15EF70C1EC574DAF8536A7963914 /* PBXTargetDependency */,
+				562B19F54A8BC430F40969025809D150 /* PBXTargetDependency */,
+			);
+			name = "Pods-Pantri1-1";
+			productName = "Pods-Pantri1-1";
+			productReference = 6B337411C5D501E1FE17530DA5E3A751 /* Pods_Pantri1_1.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 1F4D6598125EEEAC0B4AA9C6929A8450 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				41FA54D12162DAD51D02FC58A2CD5034 /* MBProgressHUD */,
+				ACC29EFDD2C10805A227054F36EE19D3 /* Pods-Pantri1-1 */,
+				26D0EC49914E417DFE0F7FE1B15FA210 /* SwipeCellKit */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		27E6EB8B4DC1CB604F6D31CD853FFA3F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C26ACEDFD838F705B664AE85BCFA75F1 /* Pods-Pantri1-1-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91EF922DC2F3CAD880FF850A9B365260 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D5412BA507E813B48B04E2AD914B926 /* Extensions.swift in Sources */,
+				CF98CA6F117B33D8180F54FEA4BA12F2 /* Swipeable.swift in Sources */,
+				BF959C2AD1252D9CE870CB9E721FF904 /* SwipeAction.swift in Sources */,
+				40018745AEFA5D8527BD3B9400C75F83 /* SwipeActionButton.swift in Sources */,
+				9685E41C72FF6221F8F6D2F7D658F753 /* SwipeActionsView.swift in Sources */,
+				5E0141830198A4657EFD1137415FEAFB /* SwipeActionTransitioning.swift in Sources */,
+				4310E48839B8D25C0A6FBB689D391B03 /* SwipeAnimator.swift in Sources */,
+				E2D076A92B4245AAC9665379C381F4C7 /* SwipeCellKit-dummy.m in Sources */,
+				E3B1E9D7DD619875F48379D1B04BDB8D /* SwipeExpanding.swift in Sources */,
+				51BE98AA9E34D60ED4A6DFFEDDEE23BC /* SwipeExpansionStyle.swift in Sources */,
+				EBAF867E27E4464D4F8B499308B1D58F /* SwipeFeedback.swift in Sources */,
+				2475537652D981C3239F29CC3CFD2A9D /* SwipeTableOptions.swift in Sources */,
+				97D1CB681ECBCA616EABB8462E38E22D /* SwipeTableViewCell+Accessibility.swift in Sources */,
+				D8A8B29FAB1D72892ED086CE4B9074E6 /* SwipeTableViewCell+Display.swift in Sources */,
+				EBB55DF52814829824EC756B4BEA8880 /* SwipeTableViewCell.swift in Sources */,
+				257BA3326922488EE345AE3C04DCA84D /* SwipeTableViewCellDelegate.swift in Sources */,
+				0844842A7BA43262A2E13115ABFDB411 /* SwipeTransitionLayout.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE8E0446C3B3B52779E8DE373E495A61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0968524ED4DE8DF7834055C5B6089D72 /* MBProgressHUD-dummy.m in Sources */,
+				897C38C8E3C31950E2E93A4D6937CCC4 /* MBProgressHUD.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		562B19F54A8BC430F40969025809D150 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwipeCellKit;
+			target = 26D0EC49914E417DFE0F7FE1B15FA210 /* SwipeCellKit */;
+			targetProxy = 3B83467AE7D0801F5A4789445697D16C /* PBXContainerItemProxy */;
+		};
+		935E15EF70C1EC574DAF8536A7963914 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MBProgressHUD;
+			target = 41FA54D12162DAD51D02FC58A2CD5034 /* MBProgressHUD */;
+			targetProxy = A26CAFEDE06B48C8AF17DA3535E7963F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		18548A584428EC0474184CEB7686BA5E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C296D48166CFF18AFCCC53C1578958C4 /* MBProgressHUD.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MBProgressHUD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = MBProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		209F23DF8D4DEF36B952F57E347C30A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCF1950619835A99EAC2092A1B661A93 /* Pods-Pantri1-1.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Pantri1-1/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Pantri1-1/Pods-Pantri1-1.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Pantri1_1;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		667C8C04AB89F6F3950102C0B1DE8881 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF6E414996E102DF6BF421CAB2F08709 /* SwipeCellKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwipeCellKit/SwipeCellKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwipeCellKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwipeCellKit/SwipeCellKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwipeCellKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		97803B46811A9BDB5E70FA1303AFBFFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		B24300E49AE9BBFD697A977C4F806DD0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF6E414996E102DF6BF421CAB2F08709 /* SwipeCellKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwipeCellKit/SwipeCellKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwipeCellKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwipeCellKit/SwipeCellKit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwipeCellKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BC99321907D5091FE099FD97F9EE0E83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C296D48166CFF18AFCCC53C1578958C4 /* MBProgressHUD.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MBProgressHUD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MBProgressHUD/MBProgressHUD.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = MBProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BDD0139D6EB93FA375F887ABD62DAB2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD0C588F9CECF0D4A8EF9CD0E1D80E6C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCAB7CAB52BCAC507248E890D439C7E7 /* Pods-Pantri1-1.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Pantri1-1/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Pantri1-1/Pods-Pantri1-1.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Pantri1_1;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D2D8A74F9A164CBC42CCE5395DD4E4B /* Build configuration list for PBXNativeTarget "Pods-Pantri1-1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				209F23DF8D4DEF36B952F57E347C30A3 /* Debug */,
+				CD0C588F9CECF0D4A8EF9CD0E1D80E6C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97803B46811A9BDB5E70FA1303AFBFFE /* Debug */,
+				BDD0139D6EB93FA375F887ABD62DAB2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC1874913BA1F82C4953C3C7F551AB22 /* Build configuration list for PBXNativeTarget "MBProgressHUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18548A584428EC0474184CEB7686BA5E /* Debug */,
+				BC99321907D5091FE099FD97F9EE0E83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9207BC138B880707C6F7B4EDC0CBEBD /* Build configuration list for PBXNativeTarget "SwipeCellKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B24300E49AE9BBFD697A977C4F806DD0 /* Debug */,
+				667C8C04AB89F6F3950102C0B1DE8881 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

@@ -1,0 +1,15 @@
+PODS:
+  - MBProgressHUD (1.0.0)
+  - SwipeCellKit (1.9.0)
+
+DEPENDENCIES:
+  - MBProgressHUD (~> 1.0)
+  - SwipeCellKit
+
+SPEC CHECKSUMS:
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  SwipeCellKit: 893661973276ae3512a84ac0a47055923b10731e
+
+PODFILE CHECKSUM: 7d7a062c9a073ce9dee0228b487c67f5a0ec3667
+
+COCOAPODS: 1.3.1
