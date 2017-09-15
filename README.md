@@ -19,7 +19,15 @@ Features still in progress:
 * Refine interface.
 * Make tableview cells expandable for editing.
   * Instead of having an expandable view for generic shopping items, use expandable tableview cell.
-  
+
+Interface Design Plan
+---------------------
+
+#### Inventory View
+![alt text](http://i67.tinypic.com/302s1o0.png)
+#### Grocery Planning View (Sort by what's most needed or by preferred store)
+![alt text](http://i65.tinypic.com/bgqu78.png)
+#### Grocery Shopping View
 ![alt text](http://i68.tinypic.com/20749iq.jpg)
   
   
