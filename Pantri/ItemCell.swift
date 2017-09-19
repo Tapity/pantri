@@ -7,19 +7,19 @@
 //
 
 import UIKit
-import CoreData
+import SwipeCellKit
 
-class FruitCell: UITableViewCell {
- 
+/// Note: Must implement swipeTableViewCell delegate
+/// Custom swipeable tableview cell
+class ItemCell: SwipeTableViewCell {
+    
+    /// Item name
     @IBOutlet weak var name: UILabel!
     
-    @IBOutlet weak var detail: UILabel!
     
+    /* Configure cell appearance */
     func configureCell(item: Item) {
         name.text = item.name
-        detail.text = item.notes
-        
-        // cell style for stock
         switch item.amountLeft {
         case 0:
             destockCell()
@@ -28,7 +28,7 @@ class FruitCell: UITableViewCell {
         case 2:
             stockCell()
         default:
-            stockCell()
+            stockCell() // TODO: COULD CAUSE ERRORS
         }
     }
     
@@ -44,6 +44,4 @@ class FruitCell: UITableViewCell {
     func stockCell(){
         backgroundColor = .white
     }
-    
-        
 }

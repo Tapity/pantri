@@ -23,12 +23,12 @@ extension GroceryListVC: UITableViewDelegate, UITableViewDataSource {
             configureCell(cell: cell , indexPath: indexPath as NSIndexPath, control: cntrl)
             return cell
         } else if (tableView == self.fruitTableView){
-            let cell = tableView.dequeueReusableCell(withIdentifier: "fruitCell", for: indexPath) as! FruitCell
-            configureFruitCell(cell: cell , indexPath: indexPath as NSIndexPath, control: cntrl)
+            let cell = tableView.dequeueReusableCell(withIdentifier: "fruitCell", for: indexPath) as! NonSpecificItemCell
+            configureNSICell(cell: cell , indexPath: indexPath as NSIndexPath, control: cntrl)
             return cell
         } else {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "meatCell", for: indexPath) as! MeatCell
-            configureMeatCell(cell: cell , indexPath: indexPath as NSIndexPath, control: cntrl)
+            let cell = tableView.dequeueReusableCell(withIdentifier: "meatCell", for: indexPath) as! NonSpecificItemCell
+            configureNSICell(cell: cell , indexPath: indexPath as NSIndexPath, control: cntrl)
             return cell
         }
     }
@@ -39,14 +39,8 @@ extension GroceryListVC: UITableViewDelegate, UITableViewDataSource {
         cell.configureCell(item: item)
     }
     
-    // configure fruit cell
-    func configureFruitCell(cell: FruitCell, indexPath: NSIndexPath, control: NSFetchedResultsController<Item>){
-        let item = control.object(at: indexPath as IndexPath)
-        cell.configureCell(item: item)
-    }
-    
-    // configure fruit cell
-    func configureMeatCell(cell: MeatCell, indexPath: NSIndexPath, control: NSFetchedResultsController<Item>){
+    // configure non specific item cell
+    func configureNSICell(cell: NonSpecificItemCell, indexPath: NSIndexPath, control: NSFetchedResultsController<Item>){
         let item = control.object(at: indexPath as IndexPath)
         cell.configureCell(item: item)
     }
@@ -123,7 +117,7 @@ extension GroceryListVC: UITableViewDelegate, UITableViewDataSource {
         return [remove, purchased]
         }
         
-        // generic item table case: behave like inventory
+        // generic item table case: behavior like inventory
         else {
             let outOfStock = UITableViewRowAction(style: .normal, title: "") { action, index in
                 self.updateStock(index: index, stock: 0, controller: cntrl)
