@@ -25,7 +25,8 @@
 		42233A6C1E6E47E40031C4C1 /* InventoryVC+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42233A6B1E6E47E40031C4C1 /* InventoryVC+TableView.swift */; };
 		422ACC371E6F8A8200C0893D /* InventoryVC+Fetches.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422ACC361E6F8A8200C0893D /* InventoryVC+Fetches.swift */; };
 		424E49ED1EA5C683005E1664 /* Altoysitalicpersonalonly.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 424E49EC1EA5C683005E1664 /* Altoysitalicpersonalonly.ttf */; };
-		42B4A4F31E72226100CF898F /* FruitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B4A4F21E72226000CF898F /* FruitCell.swift */; };
+		42742C711F7077D00002668C /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42742C701F7077D00002668C /* ItemCell.swift */; };
+		42B4A4F31E72226100CF898F /* NonSpecificItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B4A4F21E72226000CF898F /* NonSpecificItemCell.swift */; };
 		42C99F1B1E70BB9C0026FBA6 /* Category+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C99F191E70BB9C0026FBA6 /* Category+CoreDataClass.swift */; };
 		42C99F1C1E70BB9C0026FBA6 /* Category+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C99F1A1E70BB9C0026FBA6 /* Category+CoreDataProperties.swift */; };
 		42EA8A0B1EA45AC10040916C /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42EA8A0A1EA45AC10040916C /* TabBarController.swift */; };
@@ -57,7 +58,8 @@
 		42233A6B1E6E47E40031C4C1 /* InventoryVC+TableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "InventoryVC+TableView.swift"; sourceTree = "<group>"; };
 		422ACC361E6F8A8200C0893D /* InventoryVC+Fetches.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "InventoryVC+Fetches.swift"; sourceTree = "<group>"; };
 		424E49EC1EA5C683005E1664 /* Altoysitalicpersonalonly.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Altoysitalicpersonalonly.ttf; path = ../../MiraclePill/Altoysitalicpersonalonly.ttf; sourceTree = "<group>"; };
-		42B4A4F21E72226000CF898F /* FruitCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FruitCell.swift; sourceTree = "<group>"; };
+		42742C701F7077D00002668C /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		42B4A4F21E72226000CF898F /* NonSpecificItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NonSpecificItemCell.swift; sourceTree = "<group>"; };
 		42C99F191E70BB9C0026FBA6 /* Category+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Category+CoreDataClass.swift"; sourceTree = "<group>"; };
 		42C99F1A1E70BB9C0026FBA6 /* Category+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Category+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		42EA8A0A1EA45AC10040916C /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 		42233A491E6E2C1A0031C4C1 /* Pantri */ = {
 			isa = PBXGroup;
 			children = (
+				42742C701F7077D00002668C /* ItemCell.swift */,
 				42F5CE3A1E6F8BC800E94C96 /* Inventory */,
 				42F5CE471E6F96C700E94C96 /* GroceryList */,
 				420BA0DA1E73A08C00BB3940 /* SyncBrain.swift */,
@@ -169,7 +172,7 @@
 				42F5CE431E6F917F00E94C96 /* GroceryList+Fetches.swift */,
 				42F5CE411E6F913800E94C96 /* GroceryListVC+DataSource.swift */,
 				42F5CE451E6F95C800E94C96 /* GroceryListItemCell.swift */,
-				42B4A4F21E72226000CF898F /* FruitCell.swift */,
+				42B4A4F21E72226000CF898F /* NonSpecificItemCell.swift */,
 				420BA0AE1E730E7A00BB3940 /* MeatCell.swift */,
 			);
 			name = GroceryList;
@@ -232,7 +235,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 42233A421E6E2C1A0031C4C1 /* Build configuration list for PBXProject "Pantri1-1.temp_caseinsensitive_rename" */;
+			buildConfigurationList = 42233A421E6E2C1A0031C4C1 /* Build configuration list for PBXProject "Pantri1-1" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -333,9 +336,10 @@
 				42233A4B1E6E2C1A0031C4C1 /* AppDelegate.swift in Sources */,
 				42F5CE441E6F917F00E94C96 /* GroceryList+Fetches.swift in Sources */,
 				42F5CE421E6F913800E94C96 /* GroceryListVC+DataSource.swift in Sources */,
-				42B4A4F31E72226100CF898F /* FruitCell.swift in Sources */,
+				42B4A4F31E72226100CF898F /* NonSpecificItemCell.swift in Sources */,
 				42233A4D1E6E2C1A0031C4C1 /* InventoryVC.swift in Sources */,
 				42C99F1C1E70BB9C0026FBA6 /* Category+CoreDataProperties.swift in Sources */,
+				42742C711F7077D00002668C /* ItemCell.swift in Sources */,
 				42F5CE461E6F95C800E94C96 /* GroceryListItemCell.swift in Sources */,
 				422ACC371E6F8A8200C0893D /* InventoryVC+Fetches.swift in Sources */,
 				42C99F1B1E70BB9C0026FBA6 /* Category+CoreDataClass.swift in Sources */,
@@ -502,7 +506,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		42233A421E6E2C1A0031C4C1 /* Build configuration list for PBXProject "Pantri1-1.temp_caseinsensitive_rename" */ = {
+		42233A421E6E2C1A0031C4C1 /* Build configuration list for PBXProject "Pantri1-1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				42233A591E6E2C1A0031C4C1 /* Debug */,

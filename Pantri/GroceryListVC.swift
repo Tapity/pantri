@@ -101,7 +101,7 @@ class GroceryListVC: UIViewController {
     
     func loadMeatView(doConstrain: Bool){
         if (doConstrain){
-            fruitTableViewHeight.constant = 0
+            meatTableViewHeight.constant = 0
         } else {
         var numRows = meatTableView.numberOfRows(inSection: 0)
         numRows = numRows * 50

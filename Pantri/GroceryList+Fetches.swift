@@ -134,10 +134,8 @@ extension GroceryListVC : NSFetchedResultsControllerDelegate {
                         } else {
                             if (controller == self.controller){
                                 configureCell(cell: cell as! GroceryListItemCell, indexPath: indexPath as NSIndexPath, control: controller as! NSFetchedResultsController<Item>)
-                            } else if (controller == self.fruitController){
-                                configureFruitCell(cell: cell as! FruitCell, indexPath: indexPath as NSIndexPath, control: controller as! NSFetchedResultsController<Item>)
                             } else {
-                                configureMeatCell(cell: cell as! MeatCell, indexPath: indexPath as NSIndexPath, control: controller as! NSFetchedResultsController<Item>)
+                                configureNSICell(cell: cell as! NonSpecificItemCell, indexPath: indexPath as NSIndexPath, control: controller as! NSFetchedResultsController<Item>)
                             }
                         }
                     }
